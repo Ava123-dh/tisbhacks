@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TISB Hacks — A Hackathon</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="code-rain" aria-hidden="true"></canvas>
+
+    <div class="vscode-window">
+      <div class="titlebar">
+        <div class="window-controls">
+          <span class="control red"></span>
+          <span class="control yellow"></span>
+          <span class="control green"></span>
+        </div>
+        <div class="titlebar-title">TISB HACKS 2026 — Visual Studio Code</div>
+      </div>
+      <div class="workbench">
+        <aside class="activity-bar">
+          <div class="activity active">⌘</div>
+          <div class="activity">📄</div>
+          <div class="activity">🔍</div>
+          <div class="activity">🐙</div>
+          <div class="activity">▶</div>
+        </aside>
+        <aside class="sidebar">
+          <div class="sidebar-header">Explorer</div>
+          <div class="tree">
+            <div class="tree-item folder">TISB-HACKS-2026</div>
+            <div class="tree-item file">index.html</div>
+            <div class="tree-item file">timeline.md</div>
+            <div class="tree-item file">subevents.json</div>
+            <div class="tree-item file">prizes.yaml</div>
+            <div class="tree-item file">sponsors.svg</div>
+          </div>
+          <div class="sidebar-footer">Online</div>
+        </aside>
+        <div class="editor">
+          <div class="editor-tabs">
+            <div class="tab active">index.html</div>
+            <div class="tab">timeline.md</div>
+            <div class="tab">subevents.json</div>
+          </div>
+          <div class="editor-content">
+            <div class="page">
+              <header class="top-bar">
+                <div class="brand">
+                  <img src="80kntrlf_image.png" alt="TISB Hacks logo" class="logo" />
+                </div>
+                <nav class="top-nav">
+                  <a href="#about">About</a>
+                  <a href="#schedule">Events</a>
+                  <a href="#sponsors">Sponsors</a>
+                  <a href="#prizes">Prizes</a>
+                </nav>
+              </header>
+
+              <main class="hero" id="about">
+                <div class="hero-logo">
+                  <img src="80kntrlf_image.png" alt="TISB Hacks logo" />
+                </div>
+                <div class="hero-tagline">CODE. CREATE. CONQUER.</div>
+                <div class="hero-text">
+                  <div class="eyebrow">TISB Hacks 2026</div>
+                  <h1>
+                    Build the Future.
+                    <span>7 Feb 2026</span>
+                  </h1>
+                  <p>
+                    Inter-school online hackathon where innovators, designers, and
+                    coders solve real-world problems over five high-energy days before
+                    presenting live to judges.
+                  </p>
+                  <div class="cta-row">
+                    <a class="btn primary" href="#sponsors">See Sponsors</a>
+                    <a class="btn ghost" href="#schedule">View Events</a>
+                  </div>
+                </div>
+
+                <div class="hero-card" aria-live="polite">
+                  <div class="card-title">Countdown to Launch</div>
+                  <div class="countdown" id="countdown">
+                    <div class="time">
+                      <span id="days">00</span>
+                      <label>Days</label>
+                    </div>
+                    <div class="time">
+                      <span id="hours">00</span>
+                      <label>Hours</label>
+                    </div>
+                    <div class="time">
+                      <span id="minutes">00</span>
+                      <label>Minutes</label>
+                    </div>
+                    <div class="time">
+                      <span id="seconds">00</span>
+                      <label>Seconds</label>
+                    </div>
+                  </div>
+                  <div class="card-meta">7 Feb 2026 • On campus</div>
+                </div>
+              </main>
+
+              <section class="section timeline" id="schedule">
+                <div class="section-title">Event Timeline</div>
+                <ul class="file-tree">
+                  <li class="tree-folder">February</li>
+                  <li class="tree-file">Feb 1 to Feb 5 - Online build and preparation phase</li>
+                  <li class="tree-file">Feb 6 - Final project submission</li>
+                  <li class="tree-file">Feb 7 - Live online presentations to panelled judges</li>
+                </ul>
+              </section>
+
+              <section class="section subevents" id="subevents">
+                <div class="section-title">Sub-Events</div>
+                <div class="subevent-grid">
+                  <article class="subevent-card">
+                    <h3>Code It Out</h3>
+                    <p>Seniors only, grades 9 to 12. Fast-paced coding challenge focused on algorithms and logic.</p>
+                    <ul>
+                      <li>1st: ₹5,000</li>
+                      <li>2nd: ₹3,000</li>
+                      <li>3rd: ₹2,000</li>
+                    </ul>
+                  </article>
+                  <article class="subevent-card">
+                    <h3>UX/UI Design Challenge</h3>
+                    <p>Open to all. Create intuitive, compelling digital interfaces with strong storytelling.</p>
+                    <ul>
+                      <li>1st: ₹5,000</li>
+                      <li>2nd: ₹3,000</li>
+                      <li>3rd: ₹2,000</li>
+                    </ul>
+                  </article>
+                  <article class="subevent-card">
+                    <h3>Idea Pitch Presentation</h3>
+                    <p>Juniors only, grades 6 to 8. Pitch a tech-driven solution focusing on impact and feasibility.</p>
+                    <ul>
+                      <li>1st: ₹5,000</li>
+                      <li>2nd: ₹1,000 + Emergent credit of ₹2,000</li>
+                      <li>3rd: ₹1,000 + Emergent credit of ₹1,000</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
+
+              <section class="section prizes" id="prizes">
+                <div class="section-title">Main Hackathon Prizes</div>
+                <div class="podium">
+                  <div class="podium-block silver">
+                    <div class="podium-rank">2</div>
+                    <div class="podium-label">Senior 2nd</div>
+                    <div class="podium-prize">₹15,000</div>
+                  </div>
+                  <div class="podium-block gold">
+                    <div class="podium-rank">1</div>
+                    <div class="podium-label">Senior 1st</div>
+                    <div class="podium-prize">₹25,000</div>
+                  </div>
+                  <div class="podium-block bronze">
+                    <div class="podium-rank">3</div>
+                    <div class="podium-label">Senior 3rd</div>
+                    <div class="podium-prize">₹10,000</div>
+                  </div>
+                </div>
+                <div class="prize-details">
+                  <div class="detail-card">
+                    <h4>Junior Category</h4>
+                    <p>1st: ₹12,000 + Emergent credit of ₹4,000</p>
+                    <p>2nd: ₹10,000</p>
+                    <p>3rd: ₹5,000</p>
+                  </div>
+                  <div class="detail-card">
+                    <h4>Total Prize Pool</h4>
+                    <p>₹3,00,000+ in cash and in-kind rewards</p>
+                    <p>Certificates for all participants</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section details" id="details">
+                <div class="section-title">Details</div>
+                <div class="detail-grid">
+                  <div class="detail-card">
+                    <h4>Registration</h4>
+                    <p>Completely free to participate.</p>
+                    <p>Open to students across regions.</p>
+                  </div>
+                  <div class="detail-card">
+                    <h4>Main Event</h4>
+                    <p>Inter-school online hackathon with five days of collaboration, building, and refinement.</p>
+                  </div>
+                  <div class="detail-card">
+                    <h4>Finals</h4>
+                    <p>Live online presentations to expert judges.</p>
+                  </div>
+                </div>
+              </section>
+
+              <section class="section why" id="why">
+                <div class="section-title">Why Participate</div>
+                <div class="why-grid">
+                  <div class="why-card">Build real-world tech solutions</div>
+                  <div class="why-card">Collaborate with students across schools</div>
+                  <div class="why-card">Gain exposure to design, coding, and pitching</div>
+                  <div class="why-card">Present to experienced judges and mentors</div>
+                  <div class="why-card">Win prizes and recognition</div>
+                </div>
+              </section>
+
+              <section class="section sponsors" id="sponsors">
+                <div class="section-title">Sponsors</div>
+                <div class="sponsor-grid">
+                  <div class="sponsor featured">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D0BAQGDxavK__rQ_w/company-logo_200_200/B4DZZta760HIAM-/0/1745592500385/emergentlabs_logo?e=2147483647&v=beta&t=9R6Ve8BxmNPuVvUn1Y5j2ZGMZP5Kk7xTqr9TeXT_p10" alt="Emergent AI logo" />
+                    <span>Emergent AI</span>
+                  </div>
+                  <div class="sponsor">
+                    <img src="qg452kkq_image.png" alt="Flipkart logo" />
+                    <span>Flipkart</span>
+                  </div>
+                  <div class="sponsor">
+                    <img src="sk0sj24w_image.png" alt="Smartowner logo" />
+                    <span>Smartowner</span>
+                  </div>
+                </div>
+              </section>
+
+              <footer class="footer">
+                <div>© 2026 TISB Hacks. All rights reserved.</div>
+              </footer>
+
+            </div>
+          </div>
+        </div>
+        <aside class="copilot-panel">
+          <div class="copilot-header">Copilot</div>
+          <div class="copilot-body">
+            <div class="copilot-line">Editing index.html</div>
+            <div class="copilot-line">Injecting timeline.md</div>
+            <div class="copilot-line">Updating sponsors.svg</div>
+            <div class="copilot-line">Syncing prizes.yaml</div>
+            <div class="copilot-line typing">Typing...</div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
