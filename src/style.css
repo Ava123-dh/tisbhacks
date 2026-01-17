@@ -828,15 +828,15 @@ body {
   position: relative;
   padding-left: 36px;
   font-size: 1rem;
+  margin-bottom: 10px;
+  color: #c792ea;
+}
 
-.event-card::before {
+.subevent-card h3::before {
   content: ">";
   position: absolute;
   left: 14px;
   color: #47f5ff;
-}
-  margin-bottom: 10px;
-  color: #c792ea;
 }
 
 .subevent-card p {
@@ -845,7 +845,6 @@ body {
   line-height: 1.6;
   font-family: "JetBrains Mono", "Fira Code", "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-  position: relative;
 
 
 .subevent-card::before {

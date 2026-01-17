@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/tisbhacks/",
+  base: "/",
   build: {
     outDir: "docs",
     emptyOutDir: true,
