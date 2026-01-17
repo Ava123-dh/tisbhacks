@@ -551,6 +551,43 @@ body {
   color: var(--muted);
 }
 
+.free-banner {
+  margin: 18px auto 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  border: 1px solid rgba(71, 245, 255, 0.35);
+  background: rgba(10, 14, 22, 0.7);
+  box-shadow: 0 0 24px rgba(71, 245, 255, 0.25);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-family: "JetBrains Mono", "Fira Code", "SFMono-Regular", ui-monospace, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  z-index: 2;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.free-banner-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.free-badge {
+  font-family: "Monoton", "Aileron", sans-serif;
+  font-size: 1.4rem;
+  color: var(--accent);
+  text-shadow: 0 0 20px rgba(71, 245, 255, 0.45);
+}
+
+.free-text {
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
 .section {
   margin-top: 60px;
   position: relative;
@@ -2061,5 +2098,79 @@ body {
 
   .hero-logo {
     order: -1;
+  }
+
+  .hero-card {
+    padding: 36px 24px;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .countdown {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 16px;
+  }
+
+  .time {
+    padding: 16px 12px;
+  }
+
+  .time span {
+    font-size: 2.8rem;
+  }
+
+  .time label {
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+  }
+
+  .podium {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    gap: 14px;
+  }
+
+  .podium-block.gold {
+    grid-column: span 2;
+    height: 190px;
+  }
+
+  .podium-block.silver,
+  .podium-block.bronze {
+    height: 150px;
+  }
+
+  .prize-details,
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .copilot-prize-content {
+    padding: 32px 20px;
+  }
+
+  .prize-amount {
+    font-size: clamp(2.6rem, 12vw, 3.8rem);
+  }
+
+  .why-hero {
+    padding: 28px 18px 32px;
+  }
+
+  .why-title {
+    font-size: clamp(2.2rem, 9vw, 3.4rem);
+  }
+
+  .why-grid {
+    gap: 18px;
+  }
+
+  .free-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 14px 18px;
+  }
+
+  .free-text {
+    font-size: 0.8rem;
   }
 }
